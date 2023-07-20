@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Mi CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Afterclass 1</title>
+    <title>Afterclass 3</title>
 </head>
 <body>
     <header class="header">
@@ -46,26 +49,48 @@
 
             <article>
                 <section>
-                    <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/290119.jpg?resize=768%2C495&ssl=1" alt="Dibujo de pantuflas de perro">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/290119.jpg?resize=768%2C495&ssl=1" alt="Dibujo de pantuflas de perro" class="d-block" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/17662689_1282467095176548_5018359137197621248_n.jpg?resize=768%2C768&ssl=1" alt="Chica con perros en la cama" class="d-block" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/50507040_2303331139978448_5989215346748483436_n.jpg?resize=768%2C768&ssl=1" class="d-block" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/14723661_1820114334903190_6019592219499954176_n.jpg?resize=768%2C768&ssl=1" class="d-block" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/32203104_581246592231228_1535748939179884544_n.jpg?resize=768%2C768&ssl=1" class="d-block" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     <p>Afrontémoslo, no hay nada que no haríamos por nuestras queridas mascotas. Desde gastar una pequeña fortuna en una lujosa cama para gatos, hasta derrochar el dinero en golosinas gourmet para perros, es seguro decir que estamos bastante obsesionados con nuestros peludos amigos.</p>
                     <p>Pero ahora una empresa ha llevado nuestra obsesión mascoteril a niveles completamente inimaginados, y se presenta en forma de pantuflas personalizadas.</p>
                 </section>
                 <section>
-                    <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/17662689_1282467095176548_5018359137197621248_n.jpg?resize=768%2C768&ssl=1" alt="Chica con perros en la cama">
                     <p>Cuddle Clones presentó oficialmente esta semana las zapatillas hechas a medida para parecerse a tu amado perro o gato.</p>
                 </section>
                 <section>
-                    <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/50507040_2303331139978448_5989215346748483436_n.jpg?resize=768%2C768&ssl=1" alt="perros sacando la lengua">
                     <p>Para obtenerlas, simplemente tenés que enviar una foto, y los diseñadores crearán la viva imagen de tu mascota, en forma de pantufla.</p>
                     <p>Y hay que decir que el parecido es absolutamente perfecto.</p>
                 </section>
                 <section>
-                    <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/14723661_1820114334903190_6019592219499954176_n.jpg?resize=768%2C768&ssl=1" alt="2 gatos y 1 pantufla">
                     <p>Pero antes de ir corriendo a encargar las tuyas, hay una cosa que deberías saber: un solo par de pantuflas de felpa te costarán USD 150.</p>
                     <p>Lo que, lamentablemente, tiene sentido teniendo en cuenta el nivel de detalle que se incluye en cada clon mascotero.</p>
                 </section>
                 <section>
-                    <img src="https://i0.wp.com/www.periodismo.com/wp-content/subid/32203104_581246592231228_1535748939179884544_n.jpg?resize=768%2C768&ssl=1" alt="2 pantuflas y 1 perro">
                     <p>En el lado positivo, ¡la compañía ofrece una garantía de devolución del dinero si no estás satisfecho con su creación!</p>
                 </section>
 
@@ -73,15 +98,30 @@
         </main>
     </div>
 
-    <footer class="footer">
-        <ul>
-            <li>Home</li>
-            <li>Top</li>
-            <li>Cursos de periodismo</li>
-            <li>Contacto</li>
-        </ul>
+    <footer class="footer p-3">
+        <div class="container text-center p-3">
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <a href="#">Home</a>
+                <a href="#">Top</a>
+              </div>
+              <div class="col col d-flex flex-column">
+                <a href="#">Cursos de periodismo</a>
+                <a href="#">Cursos de escritura</a>
+                <a href="#">Cursos de fotografia</a>
+              </div>
+              <div class="col col d-flex flex-column">
+                <a href="#">Contacto</a>
+                <a href="#">Sedes</a>
+                <a href="#">Telefonos</a>
+              </div>
+            </div>
+          </div>
         <p>Copyright © 1997-2023 DataPress Multimedia - Director: Diego Rottman</p>
         <p>Permitida su reproducción solicitando autorización</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
